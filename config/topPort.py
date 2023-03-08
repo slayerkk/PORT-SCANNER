@@ -15,5 +15,7 @@ for Portas in Portas:
     code = cliente.connect_ex((f'{a}', Portas))
     if code == 0:
         print(f'{verde1}{Portas} OPEN{nulo}')
-    if code == 10060:
+    elif code == 10060:
+        print(f'{vermelho1}{Portas} CLOSED{nulo}')
+    elif code == 111:
         print(f'{vermelho1}{Portas} CLOSED{nulo}')

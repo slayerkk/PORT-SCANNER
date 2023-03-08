@@ -19,7 +19,11 @@ while True:
     if code == 0:
         input(f'''{verde1}{Portas} OPEN{nulo}
 Aperte enter para continuar...''')
-    if code == 10060:
+    elif code == 10060:
         print(f'{vermelho1}{Portas} CLOSED{nulo}')
+
+    elif code == 111:
+        print(f'{vermelho1}{Portas} CLOSED{nulo}')
+
         if Portas == 65.535:
             break
